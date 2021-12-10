@@ -14,24 +14,4 @@ export class AppController {
     createWallet(): any {
         return this.appService.createWallet();
     }
-
-    @Get('/balance')
-    balance(): any {
-        return this.appService.balance();
-    }
-
-    @Get('/airDrop')
-    airDrop(): any {
-        return this.appService.airDropSol();
-    }
-
-    @Get('/transfer')
-    transfer(): any {
-        return this.appService.transfer();
-    }
-
-    @Get('/accounts')
-    getAccounts(): any {
-        return this.appService.getAccount();
-    }
 }
